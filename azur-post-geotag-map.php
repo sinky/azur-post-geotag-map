@@ -5,7 +5,7 @@ Plugin URI: https://github.com/sinky/azur-post-geotag-map
 Version: 1.0
 Author: Marco Krage
 Author URI: http://my-azur.de
-Description: Displays little map with a marker below content of each post, zoomable and with link to google maps
+Description: Displays a little map with a marker below content of each post, zoomable and with link to google maps
 GitHub Plugin URI: https://github.com/sinky/azur-post-geotag-map
 
 */
