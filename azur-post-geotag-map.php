@@ -2,16 +2,19 @@
 /*
 Plugin Name: Azur Post Geotag Map
 Plugin URI: https://github.com/sinky/azur-post-geotag-map
-Version: 1.0
+Version: 1.1
 Author: Marco Krage
 Author URI: http://my-azur.de
 Description: Displays a little map with a marker below content of each post, zoomable and with link to google maps
 GitHub Plugin URI: https://github.com/sinky/azur-post-geotag-map
-
 */
 
-wp_enqueue_style('leaflet', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css');
-wp_enqueue_script('leaflet-js', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js');
+function azur_append_map_scripts() {
+	wp_enqueue_style('leaflet', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css');
+	wp_enqueue_script('leaflet-js', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js');
+}
+add_action('wp_enqueue_scripts', 'azur_append_map_scripts');
+
 
 add_filter('the_content', 'azur_append_map');
 function azur_append_map( $content ) {
