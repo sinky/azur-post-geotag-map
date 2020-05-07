@@ -9,8 +9,8 @@ Description: Displays a little map with a marker below content of each post, zoo
 */
 
 function azur_append_map_scripts() {
-	wp_enqueue_style('leaflet', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css');
-	wp_enqueue_script('leaflet-js', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js');
+	wp_enqueue_style('leaflet', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css');
+	wp_enqueue_script('leaflet-js', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js');
 }
 add_action('wp_enqueue_scripts', 'azur_append_map_scripts');
 
